@@ -17,7 +17,7 @@
 				<configuration>
 					<filesets>
 						<fileset>
-							<directory>src/main/angular-app/node_modules</directory>
+							<directory>src/main/po-fluig-poc/node_modules</directory>
 							<followSymlinks>false</followSymlinks>
 						</fileset>
 					</filesets>
@@ -57,7 +57,7 @@
 				</executions>
 				<configuration>
 					<nodeVersion>v18.16.1</nodeVersion>
-					<workingDirectory>src/main/angular-app</workingDirectory>
+					<workingDirectory>src/main/po-fluig-poc</workingDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
