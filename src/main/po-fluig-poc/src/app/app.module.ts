@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PoModule } from '@po-ui/ng-components';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { APP_BASE_HREF } from '@angular/common';
+
 import { PoTemplatesModule } from '@po-ui/ng-templates';
 
 @NgModule({
@@ -18,7 +20,9 @@ import { PoTemplatesModule } from '@po-ui/ng-templates';
     RouterModule.forRoot([]),
     PoTemplatesModule,
   ],
-  providers: [],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/widgetpouipoc/resources/js/' },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
