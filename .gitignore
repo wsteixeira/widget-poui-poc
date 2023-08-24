@@ -1,1 +1,8 @@
 /target/
+node_modules/
+node/
+dist/
+.angular/
+.vscode/
+src/main/webapp/resources/*
+!src/main/webapp/resources/images/icon.png
