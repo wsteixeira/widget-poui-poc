@@ -1,8 +1,8 @@
-<#assign coreContext='widgetpouipoc'>
+<#assign coreContext='widget_poui_poc'>
 
 <link rel="stylesheet" href="/${coreContext}/resources/js/styles.css">
 
-<div id="widgetpouipoc_${instanceId}" class="fluig-style-guide">
+<div id="widget_poui_poc_${instanceId}" class="fluig-style-guide">
     <app-root></app-root>
 </div>
 

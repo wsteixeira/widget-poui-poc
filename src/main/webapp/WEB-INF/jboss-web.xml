@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-web>
-    <context-root>/widgetpouipoc</context-root>
+    <context-root>/widget_poui_poc</context-root>
     <disable-cross-context>false</disable-cross-context>
 </jboss-web>

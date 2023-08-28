@@ -1,5 +1,5 @@
 application.type=widget
-application.code=widgetpouipoc
+application.code=widget_poui_poc
 application.title=Widget Angular com PO-UI
 application.description=Widget Angular com PO-UI
 application.category=SYSTEM
@@ -10,6 +10,6 @@ developer.code=TOTVS
 developer.name=TOTVS S.A.
 developer.url=http\://www.totvs.com
 view.file=view.ftl
-locale.file.base.name=widgetpouipoc
+locale.file.base.name=widget_poui_poc
 simple.deploy=true
 application.mobileapp=false
