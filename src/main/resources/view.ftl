@@ -1,3 +1,9 @@
+<link rel="stylesheet" href="/widgetpouipoc/resources/js/styles.css">
+
 <div id="widgetpouipoc_${instanceId}" class="fluig-style-guide">
-    <h1>${i18n.getTranslation('application.title')}</h1>
+    <app-root></app-root>
 </div>
+
+<script src="/widgetpouipoc/resources/js/runtime.js" type="module"></script>
+<script src="/widgetpouipoc/resources/js/polyfills.js" type="module"></script>
+<script src="/widgetpouipoc/resources/js/main.js" type="module"></script>
