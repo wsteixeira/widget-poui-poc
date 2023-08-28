@@ -1,4 +1,4 @@
-<div class="po-wrapper">
+<!--div class="po-wrapper">
   <po-toolbar p-title="AppName"></po-toolbar>
 
   <po-menu [p-menus]="menus"></po-menu>
@@ -6,4 +6,14 @@
   <po-page-default p-title="AppName">
     <p> AppName page </p>
   </po-page-default>
-</div>
+</div-->
+
+<po-toolbar
+  p-actions-icon="po-icon-menu"
+  [p-actions]="actions"
+  p-title="AppNameV2"
+></po-toolbar>
+
+<po-page-default p-title="AppName">
+  <p>AppName page</p>
+</po-page-default>
