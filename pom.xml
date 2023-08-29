@@ -63,4 +63,10 @@
 		</plugins>
         <finalName>${project.artifactId}</finalName>
     </build>
+		
+		<properties>
+        <revision>1.0.0</revision>
+				<changelist>-SNAPSHOT</changelist>
+    </properties>
+
 </project>
