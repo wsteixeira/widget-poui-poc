@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { FirstPageComponent } from './first-page/first-page.component';
+import { LastPageComponent } from './last-page/last-page.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: '**', redirectTo: '' },
+  { path: 'first', component: FirstPageComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'last', component: LastPageComponent },
+  { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({

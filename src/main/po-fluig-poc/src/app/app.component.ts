@@ -11,9 +11,18 @@ export class AppComponent {
   readonly actions: Array<PoToolbarAction> = [
     {
       icon: 'po-icon po-icon-home',
+      label: 'First',
+      url: '/first',
+    },
+    {
+      icon: 'po-icon po-icon-home',
       label: 'Home',
-      //  url: '/home',
-      action: this.onClick.bind(this),
+      url: '/home',
+    },
+    {
+      icon: 'po-icon po-icon-home',
+      label: 'Last',
+      url: '/last',
     },
   ];
 
@@ -21,7 +30,7 @@ export class AppComponent {
   //  { label: 'Home', action: this.onClick.bind(this) }
   //];
 
-  private onClick() {
-    alert('Clicked in menu item');
-  }
+  //private onClick() {
+  //  alert('Clicked in menu item');
+  //}
 }
