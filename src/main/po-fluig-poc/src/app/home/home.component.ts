@@ -13,30 +13,9 @@ export class HomeComponent implements OnInit {
 
   readonly appRoot = APP_CONFIG.APP_ROOT;
 
-  readonly avatar = `${this.appRoot}/assets/img/po_inverse.png`;
-
-  contact = {
-    name: 'Mr. Dev PO',
-    email: 'dev.po@po-ui.com',
-    phone: '47912012015',
-  };
+  readonly srcImage = `${this.appRoot}/assets/img/po_color_bg.svg`;
 
   constructor() {}
 
   ngOnInit() {}
-
-  callContact(phone: any) {
-    window.open(`tel:${phone}`, '_self');
-  }
-
-  sendContact(email: any) {
-    window.open(`mailto:${email}`, '_self');
-  }
-
-  formatPhoneNumber(phone: any) {
-    return `(${phone.substring(0, 2)}) ${phone.substring(
-      2,
-      7
-    )}-${phone.substring(7)}`;
-  }
 }

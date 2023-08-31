@@ -10,8 +10,9 @@ import { APP_BASE_HREF } from '@angular/common';
 import { APP_CONFIG } from './app.config';
 import { PoTemplatesModule } from '@po-ui/ng-templates';
 import { HomeComponent } from './home/home.component';
-import { FirstPageComponent } from './first-page/first-page.component';
-import { LastPageComponent } from './last-page/last-page.component';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { CategoryComponent } from './category/category.component';
 
 console.log(window);
 console.log(APP_CONFIG.APP_BASE);
@@ -21,11 +22,12 @@ console.log(APP_BASE_HREF);
   declarations: [
     AppComponent,
     HomeComponent,
-    FirstPageComponent,
-    LastPageComponent,
+    LoginComponent,
+    CategoryComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     PoModule,
     HttpClientModule,

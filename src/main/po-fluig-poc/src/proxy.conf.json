@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "http://joisrvapldev022.jv01.local:8080/rest",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

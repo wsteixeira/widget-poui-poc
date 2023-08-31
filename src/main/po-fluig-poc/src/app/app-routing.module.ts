@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { FirstPageComponent } from './first-page/first-page.component';
-import { LastPageComponent } from './last-page/last-page.component';
+import { LoginComponent } from './login/login.component';
+import { CategoryComponent } from './category/category.component';
 
 const routes: Routes = [
-  { path: 'first', component: FirstPageComponent },
+  { path: 'category', component: CategoryComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'last', component: LastPageComponent },
+  { path: 'login', component: LoginComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 

@@ -3,11 +3,11 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { PoPageModule } from '@po-ui/ng-components';
 
-import { FirstPageComponent } from './first-page.component';
+import { LoginComponent } from './login.component';
 
-describe('FirstPageComponent', () => {
-  let component: FirstPageComponent;
-  let fixture: ComponentFixture<FirstPageComponent>;
+describe('LoginComponent', () => {
+  let component: LoginComponent;
+  let fixture: ComponentFixture<LoginComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -15,13 +15,13 @@ describe('FirstPageComponent', () => {
         RouterTestingModule,
         PoPageModule
       ],
-      declarations: [ FirstPageComponent ]
+      declarations: [ LoginComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FirstPageComponent);
+    fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
