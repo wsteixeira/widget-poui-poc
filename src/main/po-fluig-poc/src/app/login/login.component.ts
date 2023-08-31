@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { PoPageAction } from '@po-ui/ng-components';
-import { ProtheusService } from '../share/protheus.service';
+import { ProtheusService } from '../shared/protheus.service';
 
 @Component({
   selector: 'app-login',

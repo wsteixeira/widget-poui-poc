@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 import { PoMenuItem, PoToolbarAction } from '@po-ui/ng-components';
-import { ProtheusService } from './share/protheus.service';
 import { APP_CONFIG } from './app.config';
+import { FluigService } from './shared/fluig.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,11 @@ export class AppComponent implements OnInit {
       icon: 'po-icon po-icon-user',
       label: 'Login',
       url: '/login',
+    },
+    {
+      icon: 'po-icon po-icon-exit',
+      label: 'Logout',
+      action: this.onLogout.bind(this),
     },
   ];
 
@@ -59,9 +65,23 @@ export class AppComponent implements OnInit {
       link: '/login',
       shortLabel: 'Login',
     },
+    {
+      icon: 'po-icon po-icon-exit',
+      label: 'Logout',
+      action: this.onLogout.bind(this),
+      shortLabel: 'Logout',
+    },
   ];
 
-  constructor(private service: ProtheusService) {}
+  constructor(private service: FluigService, private router: Router) {}
 
   ngOnInit(): void {}
+
+  onLogout() {
+    this.router.navigate(['/']);
+    this.service.logout().subscribe({
+      next: () => window.location.reload(),
+      error: () => window.location.reload(),
+    });
+  }
 }

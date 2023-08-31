@@ -14,7 +14,6 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "../webapp/resources/js",
-            "baseHref": "/widget_poui_poc/resources/js/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
